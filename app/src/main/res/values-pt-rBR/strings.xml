@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VirtWardrobe</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_favourites">Favoritos</string>
+    <string name="title_my_wardrobe">Meu Guarda Roupas</string>
+    <string name="authentication_help">Este app usa a proteção nativa do seu aparelho para manter seus dados seguros. Por favor, desbloqueie antes de prosseguir.</string>
+    <string name="unlock">Desbloquear</string>
+    <string name="hello_blank_fragment">Página em branco</string>
+    <string name="close">Fechar</string>
+    <string name="save">Salvar</string>
+    <string name="image_preview">Pré-visualizar imagem</string>
+    <string name="bottom_category">Calças</string>
+    <string name="ok">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm_delete_message">Essa ação não pode ser desfeita. Você quer excluir esse item permanentemente?</string>
+    <string name="category_all">Todas as roupas</string>
+    <string name="category_activewear">Esportivos</string>
+    <string name="category_bottoms">Calças</string>
+    <string name="category_coats">Casacos</string>
+    <string name="category_shoes">Sapatos</string>
+    <string name="category_tops">Camisas</string>
+    <string name="category_underwear">Íntimos</string>
+    <string name="new_picture_title">Nova Imagem</string>
+    <string name="category_description_all">Listar todos os items</string>
+    <string name="category_description_bottoms">Listar todas as calças</string>
+    <string name="category_description_shoes">Listar todos os sapatos</string>
+    <string name="category_description_underwear">Listar todas as peças íntimas</string>
+    <string name="category_description_activewear">Listar todas as roupas esportivas</string>
+    <string name="category_description_coats">Listar todos os casacos</string>
+    <string name="category_description_tops">Listar todas as camisas</string>
+    <string name="item_not_saved">Item não foi salvo</string>
+    <string name="item_saved">Salvo em meu guarda roupas</string>
+    <string name="select_category">Selecione uma categoria</string>
+    <string name="empty_category">Categoria está vazia</string>
+    <string name="home_empty">Nada para ver aqui</string>
+    <string name="home_last_used">Sua peça menos usada</string>
+    <string name="home_last_used_description">Sua peça menos usada</string>
+    <string name="outfit_selected_today">Look selecionado para hoje</string>
+    <string name="outfit_suggested_today">Que tal usar isso hoje?</string>
+    <string name="biometric_title">Login biométrico</string>
+    <string name="biometric_subtitle">Faça login usando sua credencial biométrica</string>
+    <string name="biometric_negative">Usar senha da conta</string>
+    <string name="biometric_failed">Falha na autenticação</string>
+    <string name="biometric_succeeded">Autenticação bem-sucedida!</string>
+    <string name="biometric_error">Erro de autenticação: %1$s</string>
+</resources>

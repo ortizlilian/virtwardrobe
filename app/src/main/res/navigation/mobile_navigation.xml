@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.lilianortizcosta.virtwardrobe.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_favourites"
+        android:name="com.lilianortizcosta.virtwardrobe.ui.favourites.FavouritesFragment"
+        android:label="@string/title_favourites" />
+
+    <fragment
+        android:id="@+id/navigation_my_wardrobe"
+        android:name="com.lilianortizcosta.virtwardrobe.ui.mywardrobe.MyWardrobeFragment"
+        android:label="@string/title_my_wardrobe" />
+    <fragment
+        android:id="@+id/newItemFragment"
+        android:name="com.lilianortizcosta.virtwardrobe.NewItemFragment"
+        android:label="fragment_new_item"
+        tools:layout="@layout/fragment_new_item" />
+</navigation>

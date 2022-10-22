@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewItemFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/new_item_configuration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:layout_marginBottom="400dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="src_over"
+                    android:contentDescription="@string/bottom_category"
+                    android:minHeight="64dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_activewear"
+                    android:tint="@color/gray_600"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/categoryLabel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Wear"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_600" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="src_over"
+                    android:contentDescription="@string/bottom_category"
+                    android:minHeight="64dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_shoes"
+                    android:tint="@color/gray_600"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/categoryLabel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shoes"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_600" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="src_over"
+                    android:contentDescription="@string/bottom_category"
+                    android:minHeight="64dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_bottoms"
+                    android:tint="@color/gray_600"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/categoryLabel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bottoms"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_600" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="src_over"
+                    android:contentDescription="@string/bottom_category"
+                    android:minHeight="64dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_tops"
+                    android:tint="@color/gray_600"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/categoryLabel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tops"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_600" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="src_over"
+                    android:contentDescription="@string/bottom_category"
+                    android:minHeight="64dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_coats"
+                    android:tint="@color/gray_600"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/categoryLabel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coats"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_600" />
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:backgroundTint="@color/white"
+                    android:backgroundTintMode="src_over"
+                    android:contentDescription="@string/bottom_category"
+                    android:minHeight="64dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_underwear"
+                    android:tint="@color/gray_600"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/categoryLabel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Underwear"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_600" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@string/image_preview"
+                android:cropToPadding="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/debugimagepath"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="72dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="@color/pink_700"
+            android:clickable="true"
+            android:contentDescription="@string/close"
+            android:visibility="visible"
+            app:backgroundTint="@color/pink_500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="@color/pink_200"
+            app:srcCompat="@drawable/ic_baseline_close_24"
+            app:tint="@android:color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton5"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="144dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="@color/light_blue_600"
+            android:clickable="true"
+            android:contentDescription="@string/save"
+            android:visibility="visible"
+            app:backgroundTint="@color/light_blue_600"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:rippleColor="@color/light_blue_600"
+            app:srcCompat="@drawable/ic_baseline_save_24"
+            app:tint="@android:color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

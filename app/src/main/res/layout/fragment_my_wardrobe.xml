@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mywardrobe.MyWardrobeFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/my_wardrobe_close_category"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="144dp"
+        android:background="@color/pink_700"
+        android:backgroundTint="@color/pink_700"
+        android:clickable="true"
+        android:contentDescription="@string/save"
+        android:visibility="invisible"
+        app:backgroundTint="@color/pink_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/pink_700"
+        app:srcCompat="@drawable/ic_baseline_close_24"
+        app:tint="@android:color/white"
+        tools:visibility="invisible" />
+
+    <ScrollView
+        android:id="@+id/my_wardrobe_list_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMyWardrobe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_my_wardrobe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:text="@string/empty_category"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/my_wardrobe_list_items"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/empty_category"
+        tools:visibility="invisible" />
+
+    <ScrollView
+        android:id="@+id/my_wardrobe_scroll_view_categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/mywardrobe_category_all"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/category_description_all"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_wardrobe"
+                    app:tint="@color/gray_600" />
+
+                <TextView
+                    android:id="@+id/mywardrobe_category_label_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_all"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_333" />
+
+                <ImageButton
+                    android:id="@+id/mywardrobe_category_2"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/category_description_bottoms"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_bottoms"
+                    app:tint="@color/gray_600" />
+
+                <TextView
+                    android:id="@+id/mywardrobe_category_label_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_bottoms"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_333" />
+
+                <ImageButton
+                    android:id="@+id/mywardrobe_category_4"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/category_description_shoes"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_shoes"
+                    app:tint="@color/gray_600" />
+
+                <TextView
+                    android:id="@+id/mywardrobe_category_label_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_shoes"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_333" />
+
+                <ImageButton
+                    android:id="@+id/mywardrobe_category_6"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/category_description_underwear"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_underwear"
+                    app:tint="@color/gray_600" />
+
+                <TextView
+                    android:id="@+id/mywardrobe_category_label_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_underwear"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_333" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/mywardrobe_category_1"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/category_description_activewear"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_activewear"
+                    app:tint="@color/gray_600" />
+
+                <TextView
+                    android:id="@+id/mywardrobe_category_label_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_activewear"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_333" />
+
+                <ImageButton
+                    android:id="@+id/mywardrobe_category_3"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/category_description_coats"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_coats"
+                    app:tint="@color/gray_600" />
+
+                <TextView
+                    android:id="@+id/mywardrobe_category_label_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_coats"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_333" />
+
+                <ImageButton
+                    android:id="@+id/mywardrobe_category_5"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/category_description_tops"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_svg_tops"
+                    app:tint="@color/gray_600" />
+
+                <TextView
+                    android:id="@+id/mywardrobe_category_label_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category_tops"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_333" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
